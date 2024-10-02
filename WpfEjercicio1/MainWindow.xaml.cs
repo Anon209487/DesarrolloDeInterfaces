@@ -17,21 +17,26 @@ namespace WpfEjercicio1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private String texto;
         ClsPersona miPersona = new ClsPersona();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-           
-            MessageBox.Show("Bienvenido " + miPersona.Nombre);
-        }
-
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+            TextBox textBox = sender as TextBox;
+
+             texto = textBox.Text;
+
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            miPersona.Nombre = texto;
+            MessageBox.Show("Eres una putilla " + miPersona.Nombre);
+        }
+
     }
 }

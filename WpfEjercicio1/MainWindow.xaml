@@ -12,7 +12,7 @@
             <RowDefinition Height="255*"/>
         </Grid.RowDefinitions>
         <Button Content="Button" HorizontalAlignment="Left" Margin="350,85,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="315,111,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="315,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Grid.Row="1"/>
 
     </Grid>
 </Window>
