@@ -1,6 +1,10 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿Imports BibliotecaDeClases
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
+
+    Dim miPersona As New ClsPersona
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -22,16 +26,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Button1 = New Button()
         SuspendLayout()
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = SystemColors.ButtonShadow
+        Button1.Location = New Point(352, 221)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 0
+        Button1.Text = "Mensaje"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
     End Sub
+
+    Friend WithEvents Button1 As Button
 
 End Class

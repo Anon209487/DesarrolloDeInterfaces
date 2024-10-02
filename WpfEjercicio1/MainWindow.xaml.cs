@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using BibliotecaDeClases;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,21 @@ namespace WpfEjercicio1
     /// </summary>
     public partial class MainWindow : Window
     {
+        ClsPersona miPersona = new ClsPersona();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           
+            MessageBox.Show("Bienvenido " + miPersona.Nombre);
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
         }
     }
 }
