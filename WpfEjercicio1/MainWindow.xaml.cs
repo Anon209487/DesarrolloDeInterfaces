@@ -35,7 +35,7 @@ namespace WpfEjercicio1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             miPersona.Nombre = texto;
-            MessageBox.Show("Eres una putilla " + miPersona.Nombre);
+            MessageBox.Show("Bienvenido  " + miPersona.Nombre);
         }
 
     }
