@@ -28,7 +28,7 @@ namespace WpfEjercicio1
         {
             TextBox textBox = sender as TextBox;
 
-             texto = textBox.Text;
+            texto = textBox.Text;
 
         }
 
